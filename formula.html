@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formula Pada Web App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg fixed-top navline" style="font-size: 24px; background-color: #585858;">
+            <a class="navbar-brand" href="index.html">
+                <img class="mx-2" src="images/pipe.PNG" width="130" height="70" alt="logo web app">
+            </a>
+            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color: whitesmoke;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="formula.html" style="color: #ffffff;">Formula<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" style="color: whitesmoke;">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h1 class="text-center" id="webtitle">
+            Website Aplikasi Hitung Debit Air Limbah
+        </h1>
+    </div>
+    <div class="container" style="font-size: 18px;">
+        <h4 class="text-center pt-4">Rumus Yang Digunakan:</h4>
+        <hr>
+        <div class="text-center pt-4">
+            <p style="font-size: 18px;">Dalam menentukan air limbah, dibagi menjadi dua jenis, yaitu air limbah domestik dan non domestik.</p>
+        </div>
+        <div class="form-row pt-2 text-center">
+            <div class="form-group col-md-6" style="padding-right: 10px; padding-left: 10px;">
+                <label style="font-size: 18px;"><strong>Air Limbah Domestik</strong></label>
+                <p>Air limbah domestik merupakan air limbah yang berasal dari pemukiman (air limbah rumah tangga), besarnya air bersih yang akan menjadi limbah dari konsumsi air bersih tiap orang dalam satu hari diperkirakan mencapai 70% sampai 80% dari penggunaan air bersih.</p>
+            </div>
+            <div class="form-group col-md-6" style="padding-right: 10px; padding-left: 10px;">
+                <label style="font-size: 18px;"><strong>Air Limbah Non Domestik</strong></label>
+                <p>Air limbah non domestik merupakan air limbah yang dihasilkan dari berbagai unit fasilitas, seperti  fasilitas pendidikan, fasilitas kesehatan (rumah sakit), dan fasilitas peribadatan (masjid), yang tentunya masing-masing fasilitas memiliki kebutuhan air yang berbeda-beda.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center">
+            <label style="font-size: 18px;"><strong>Q Ave Air Limbah Domestik</strong></label>
+            <br>
+            <img class="img-fluid" src="images/rumah.PNG" alt="perumahan warga">
+            <ul class="pt-2">
+                <li >Rumus= 80% &#215; Q air bersih &#215; jumlah penduduk.</b></li>
+            </ul>
+            <label style="font-size: 18px;"><strong>Informasi:</strong></label>
+            <p style="padding-left: 10%; padding-right: 10%;">Website Aplikasi ini menggunakan 80% sebagai ketentuan dalam perhitungan air limbah domestik dan Q air bersih sebesar 200 liter/orang dalam sehari.</p>
+        </div>
+        <hr>
+        <div class="pt-3 text-center">
+            <label style="font-size: 18px;"><strong>Q Ave Air Limbah Non Domestik</strong></label>
+            <br>
+        </div>
+        <div class="form-row pt-3 text-center">
+            <div class="form-group col-md-6">
+                <label style="font-size: 18px;"><strong>Q Fasilitas Pendidikan</strong></label>
+                <br>
+                <img class="img-fluid" src="images/sekolah.PNG" alt="fasilitas pendidikan">
+                <ul class="pt-2">
+                    <li>Rumus= &Sigma; fasilitas pendidikan &#215; &Sigma; total murid &#215; Q air bersih.</b></li>
+                </ul>
+            </div>
+            <div class="form-group col-md-6">
+                <label style="font-size: 18px;"><strong>Informasi:</strong></label>
+                <p style="padding-left: 10%; padding-right: 10%;">Website Aplikasi ini menggunakan Q air bersih fasilitas pendidikan sebesar 10 liter/murid.hari sebagai ketentuan.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="form-row pt-3 text-center">
+            <div class="form-group col-md-6">
+                <label style="font-size: 18px;"><strong>Q Fasilitas Kesehatan</strong></label>
+                <br>
+                <img class="img-fluid" src="images/rs.PNG" alt="fasilitas kesehatan">
+                <ul class="pt-2">
+                    <li>Rumus= &Sigma; fasilitas kesehatan &#215; &Sigma; bed &#215; Q air bersih.</li>
+                </ul>
+            </div>
+            <div class="form-group col-md-6">
+                <label style="font-size: 18px;"><strong>Informasi:</strong></label>
+                <p style="padding-left: 10%; padding-right: 10%;">Website Aplikasi ini menggunakan Q air bersih fasilitas kesehatan sebesar 200 liter/bed.hari sebagai ketentuan.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="form-row pt-3 text-center">
+            <div class="form-group col-md-6">
+                <label style="font-size: 18px;"><strong>Q Fasilitas Peribadatan</strong></label>
+                <br>
+                <img class="img-fluid" src="images/masjid.PNG" alt="fasilitas peribadatan">
+                <ul class="pt-2">
+                    <li>Rumus= &Sigma; fasilitas peribadatan &#215; Q air bersih.</li>
+                </ul>
+            </div>
+            <div class="form-group col-md-6">
+                <label style="font-size: 18px;"><strong>Informasi:</strong></label>
+                <p style="padding-left: 10%; padding-right: 10%;"> Website Aplikasi ini menggunakan Q air bersih fasilitas peribadatan sebesar 3000 liter/unit.hari sebagai ketentuan.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="form-row pt-3 text-center">
+            <div class="form-group col-md-6">
+                <label style="font-size: 18px;"><strong>Q Total Non Domestik</strong></label>
+                <br>
+                <ul class="pt-2">
+                    <li>Rumus= Q Fasilitas Pendidikan + Q Fasilitas Kesehatan + Q Fasilitas Peribadatan.</b></li>
+                </ul>
+                <label class="pt-3" style="font-size: 18px;"><strong>Informasi:</strong></label>
+                <p style="padding-left: 10%; padding-right: 10%;">Q Total Non Domestik didapatkan dengan cara menjumlahkan seluruh Q air limbah dari fasilitas-fasilitas non domestik.</p>
+            </div>
+            <div class="form-group col-md-6">
+                <label style="font-size: 18px;"><strong>Q Ave Total</strong></label>
+                <br>
+                <ul class="pt-2">
+                    <li>Rumus= Q ave domestik + Q total non domestik.</b></li>
+                </ul>
+                <br>
+                <label class="pt-3" style="font-size: 18px;"><strong>Informasi:</strong></label>
+                <p style="padding-left: 10%; padding-right: 10%;">Q Ave Total didapatkan dengan cara menjumlahkan Q Ave Domestik dengan Q Total Non Domestik.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="form-row pt-3 text-center">
+            <div class="form-group col-md-6">
+                <label style="font-size: 18px;"><strong>Q Peak</strong></label>
+                <br>
+                <img class="img-fluid" src="images/fpeakgraf.png" alt="graf faktor peak">
+                <ul class="pt-2">
+                    <li>Rumus= Q ave total &#215; fpeak.</li>
+                </ul>
+            </div>
+            <div class="form-group col-md-6">
+                <label style="font-size: 18px;"><strong>Informasi:</strong></label>
+                <p style="padding-left: 10%; padding-right: 10%;">Cara menentukan Faktor Peak ialah dengan melihat besarnya jumlah populasi (penduduk), lalu sesuaikan berdasarkan grafik.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="form-row pt-3 text-center">
+            <div class="form-group col-md-6">
+                <label style="font-size: 18px;"><strong>Q Infiltrasi</strong></label>
+                <br>
+                <img class="img-fluid" src="images/finfiltrationgraf.PNG" alt="grafik faktor infiltrasi">
+                <ul class="pt-2">
+                    <li>Rumus= Luas area &#215; faktor infiltrasi &#247; 86400</li>
+                </ul>
+            </div>
+            <div class="form-group col-md-6">
+                <label style="font-size: 18px;"><strong>Informasi:</strong></label>
+                <p style="padding-left: 10%; padding-right: 10%;">Cara menentukan Faktor Infiltrasi ialah dengan melihat luas area atau wilayah (dalam satuan ha), lalu sesuaikan berdasarkan grafik.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="pt-3 text-center">
+            <label style="font-size: 18px;"><strong>Debit Total</strong></label>
+            <br>
+            <ul class="pt-2">
+                <li>Rumus= Q peak &#43; Q infiltrasi.</b></li>
+            </ul>
+            <label class="pt-3" style="font-size: 18px;"><strong>Informasi:</strong></label>
+            <p style="padding-left: 10%; padding-right: 10%;">Debit Total didapatkan dengan cara menjumlahkan Q peak dengan Q Infiltrasi</p>
+        </div>
+        <hr>
+    </div>
+</body>
+<footer class="footerstyle page-footer text-center font-small pt-3 mt-4">
+    <div>Semoga Dengan Adanya Website Aplikasi Hitung Debit Air Limbah ini
+    </div>
+    <div>Perhitungan Debit Air Limbah lebih mudah dilakukan.
+    </div>
+    <div>-Faisal Yudha S-
+    </div>
+    <div class="footer-copyright py-3">© 2020 Copyright: 
+    <a href="index.html">Faisal Yudha S</a>
+    </div>
+</footer>
+</html>
